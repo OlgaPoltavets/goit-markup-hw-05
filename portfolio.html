@@ -21,7 +21,7 @@
         <nav>
           <a class="logo"><span class="page-header__logo">Web</span> Studio</a>
 
-          <ul class="site-nav list">
+          <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__menu"
                 >Студия</a
@@ -36,10 +36,10 @@
           </ul>
         </nav>
 
-        <ul class="list contacts">
+        <ul class="contacts">
           <li class="contacts-item">
             <!-- Ссылка на адрес электронной почты  -->
-            <a class="contacts-list link-mail" href="mailto:info@devstudio.com"
+            <a class="contacts-item__link" href="mailto:info@devstudio.com"
               >
               <svg class="contacts-item__info" width="16" height="11.2">
               <use href="./images/sprite.svg#icon-envelope"></svg>info@devstudio.com</a>
@@ -47,7 +47,7 @@
 
           <li class="contacts-item">
             <!-- Ссылка на телефонный номер -->
-            <a class="contacts-list link-mail" href="tel:+380961111111">
+            <a class="contacts-item__link" href="tel:+380961111111">
               <svg class="contacts-item__info" width="10" height="15">
               <use href="./images/sprite.svg#icon-smartphone"></svg>+38 096 111
               11 11
@@ -92,7 +92,7 @@
         </div>
 
         <div class="container">
-          <ul class="list portfolio-list">
+          <ul class="portfolio-list">
             <li class="portfolio-list__item">
               <!-- Технокряк-Веб-сайт -->
               <div class="portfolio__block">
@@ -128,16 +128,24 @@
               <!-- Постер New Orlean vs Golden Star-Дизайн-->
               <div class="portfolio__block">
                 <a href="">
-                  <img
-                    src="./images/new-orlean-vs-golden-star-design.jpg"
-                    alt="men"
-                    width="370"
-                    height="294"
-                  />
+                  <div class="portfolio__thumb">
+                    <img
+                      src="./images/new-orlean-vs-golden-star-design.jpg"
+                      alt="men"
+                      width="370"
+                      height="294"
+                    />
+
+                    <div class="portfolio__overlay">
+                      <div class="portfolio__actions">
+                        <p class="portfolio__description">
+                          Постер New Orlean vs Golden Star это ...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div class="portfolio-list__text">
-                    <h3 class="portfolio-list__title">
-                      Постер New Orlean vs Golden Star
-                    </h3>
+                    <h3 class="portfolio-list__title">Постер New Orlean vs Golden Star</h3>
                     <p class="portfolio-list__description">Дизайн</p>
                   </div>
                 </a>
@@ -148,12 +156,22 @@
               <!--Ресторан Seafood-Приложение-->
               <div class="portfolio__block">
                 <a href="">
-                  <img
-                    src="./images/restaurant-seafood-application.jpg"
-                    alt="fish"
-                    width="370"
-                    height="294"
-                  />
+                  <div class="portfolio__thumb">
+                    <img
+                      src="./images/restaurant-seafood-application.jpg"
+                      alt="fish"
+                      width="370"
+                      height="294"
+                    />
+
+                    <div class="portfolio__overlay">
+                      <div class="portfolio__actions">
+                        <p class="portfolio__description">
+                          Ресторан Seafood это ...........................
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div class="portfolio-list__text">
                     <h3 class="portfolio-list__title">Ресторан Seafood</h3>
                     <p class="portfolio-list__description">Приложение</p>
@@ -166,12 +184,22 @@
               <!--Проект Prime-Маркетинг-->
               <div class="portfolio__block">
                 <a href="">
-                  <img
-                    src="./images/project-prime-marketing.jpg"
-                    alt="headphones"
-                    width="370"
-                    height="294"
-                  />
+                  <div class="portfolio__thumb">
+                    <img
+                      src="./images/project-prime-marketing.jpg"
+                      alt="headphones"
+                      width="370"
+                      height="294"
+                    />
+
+                    <div class="portfolio__overlay">
+                      <div class="portfolio__actions">
+                        <p class="portfolio__description">
+                          Проект Prime это ................................
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div class="portfolio-list__text">
                     <h3 class="portfolio-list__title">Проект Prime</h3>
                     <p class="portfolio-list__description">Маркетинг</p>
@@ -184,12 +212,22 @@
               <!--Проект Boxes-Приложение-->
               <div class="portfolio__block">
                 <a href="">
-                  <img
-                    src="./images/project-boxes-application.jpg"
-                    alt="box"
-                    width="370"
-                    height="294"
-                  />
+                  <div class="portfolio__thumb">
+                    <img
+                      src="./images/project-boxes-application.jpg"
+                      alt="box"
+                      width="370"
+                      height="294"
+                    />
+
+                    <div class="portfolio__overlay">
+                      <div class="portfolio__actions">
+                        <p class="portfolio__description">
+                          Проект Boxes это ...............................
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div class="portfolio-list__text">
                     <h3 class="portfolio-list__title">Проект Boxes</h3>
                     <p class="portfolio-list__description">Приложение</p>
@@ -202,16 +240,24 @@
               <!--Inspiration has no Borders-Веб-сайт-->
               <div class="portfolio__block">
                 <a href="">
-                  <img
-                    src="./images/img-decisions.jpg"
-                    alt="monitor"
-                    width="370"
-                    height="294"
-                  />
+                  <div class="portfolio__thumb">
+                    <img
+                      src="./images/img-decisions.jpg"
+                      alt="monitor"
+                      width="370"
+                      height="294"
+                    />
+
+                    <div class="portfolio__overlay">
+                      <div class="portfolio__actions">
+                        <p class="portfolio__description">
+                          Inspiration has no Borders-Веб это .............
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div class="portfolio-list__text">
-                    <h3 class="portfolio-list__title">
-                      Inspiration has no Borders
-                    </h3>
+                    <h3 class="portfolio-list__title">Inspiration has no Borders</h3>
                     <p class="portfolio-list__description">Веб-сайт</p>
                   </div>
                 </a>
@@ -222,12 +268,22 @@
               <!--Издание Limited Edition-Дизайн-->
               <div class="portfolio__block">
                 <a href="">
-                  <img
-                    src="./images/limited-edition-design.jpg"
-                    alt="open book"
-                    width="370"
-                    height="294"
-                  />
+                  <div class="portfolio__thumb">
+                    <img
+                      src="./images/limited-edition-design.jpg"
+                      alt="open book"
+                      width="370"
+                      height="294"
+                    />
+
+                    <div class="portfolio__overlay">
+                      <div class="portfolio__actions">
+                        <p class="portfolio__description">
+                          Издание Limited Edition это .....................
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div class="portfolio-list__text">
                     <h3 class="portfolio-list__title">
                       Издание Limited Edition
@@ -242,12 +298,22 @@
               <!--Проект LAB-Маркетинг-->
               <div class="portfolio__block">
                 <a href="">
-                  <img
-                    src="./images/project-lab-marketing.jpg"
-                    alt="бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <div class="portfolio__thumb">
+                    <img
+                      src="./images/project-lab-marketing.jpg"
+                      alt="бирка"
+                      width="370"
+                     height="294"
+                    />
+
+                    <div class="portfolio__overlay">
+                      <div class="portfolio__actions">
+                        <p class="portfolio__description">
+                          Проект LAB это ...................................
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div class="portfolio-list__text">
                     <h3 class="portfolio-list__title">Проект LAB</h3>
                     <p class="portfolio-list__description">Маркетинг</p>
@@ -260,12 +326,22 @@
               <!--Growing Business-Приложение-->
               <div class="portfolio__block">
                 <a href="">
-                  <img
-                    src="./images/application.jpg"
-                    alt="laptop and hands"
-                    width="370"
-                    height="294"
-                  />
+                  <div class="portfolio__thumb">
+                    <img
+                      src="./images/application.jpg"
+                      alt="laptop and hands"
+                     width="370"
+                      height="294"
+                    />
+
+                    <div class="portfolio__overlay">
+                      <div class="portfolio__actions">
+                        <p class="portfolio__description">
+                          Growing Business это .........................
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div class="portfolio-list__text">
                     <h3 class="portfolio-list__title">Growing Business</h3>
                     <p class="portfolio-list__description">Приложение</p>
